@@ -1,0 +1,28 @@
+{% extends "layouts/header.html" %}
+
+{% block title %} Portafolio {% endblock  %}
+
+
+{% block content %}
+    {% load static %}
+    <div class="cuadro-fotos">
+        <div class="foto">
+            <img src="{% static 'img/foto1.jpg' %}" alt="">
+        </div>
+        <div class="foto">
+            <img src=" {% static 'img/foto2.jpg' %}" alt="">
+        </div>
+        <div class="foto">
+            <img src="{% static 'img/foto3.jpg' %}" alt="">
+        </div>
+        <div class="foto">
+            <img src="{% static 'img/foto4.jpeg' %} " alt="">
+        </div>
+        <div class="foto">
+            <img src="{% static 'img/foto5.jpg' %}" alt="">
+        </div>
+                <div class="foto">
+            <img src="{% static 'img/foto6.jpg' %}" alt="">
+        </div>
+    </div>
+{% endblock  %}

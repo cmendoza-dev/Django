@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queries</title>
+</head>
+<body>
+    <h3>Mostrando los 10 primeros elementos</h3>
+    {% for limi in limit  %}
+        <li>{{limi.email}}</li>
+    {% endfor %}
+
+    <h3>Mostrando 5 elementos despues de saltarse los 5 primeros</h3>
+    {% for offset in offsets  %}
+        <li>{{offset.email}}</li>
+    {% endfor %}
+
+    <h3>Buscando autor</h3>
+    {% for filter in filtered  %}
+        <p>{{filter.name}} | {{filter.email}}</p>
+    {% endfor %}
+
+    <h3>Mostrar un único elemento(filtrado por id</h3>
+    <p>{{ author.name }}</p>
+    <p>{{ author.email }}</p>
+
+
+    <h3>Todos los autores</h3>
+        <ul>
+            {% for author in authors %}
+                <li>{{ author.name }}( {{ author.email}} )</li>
+               
+            {% endfor %}
+        </ul>
+    <h3>Todos los autores {{ authors|length }}</h3>
+</body>
+</html>

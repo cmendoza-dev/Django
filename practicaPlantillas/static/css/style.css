@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    margin: 2rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+li{
+    list-style: none;  
+}
+
+a{
+    border: 2px solid red;
+    padding: 5px;
+    text-decoration: none;
+}
+
+a:nth-child(1){
+    margin-left: 1rem;
+}
+
+a:nth-child(2){
+    margin-right: 1rem;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.foto img{
+    width: 55vh;
+    height: auto;
+}
+
+.foto img:hover{
+    cursor: pointer;
+}
+
+.cuadro-fotos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

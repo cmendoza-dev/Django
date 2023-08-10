@@ -1,0 +1,12 @@
+.aux-btnsform{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.aux-btnsform a{
+    padding-right: 10px;
+    text-decoration: none;
+}
+
